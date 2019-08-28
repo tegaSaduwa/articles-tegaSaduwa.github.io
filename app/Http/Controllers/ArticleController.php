@@ -39,7 +39,7 @@ class ArticleController extends Controller
         $article->body = $request->input('body');
 
         if($article->save()){
-            return new ArticleResource($article);
+            return new ArticleResource($articles);
   
         }
     }
